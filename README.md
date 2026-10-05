@@ -28,12 +28,15 @@ While working on these projects, I am learning and practicing:
 I am building different projects while learning React Native.
 
 ### Project 1
+
 A basic React Native project to understand the fundamentals of components, styling, and layouts.
 
 ### Project 2
+
 A project focused on practicing React Native UI components and user interactions.
 
 ### Project 3 - Password Generator 🔐
+
 A password generator app where I am practicing:
 
 - React Native
@@ -56,6 +59,31 @@ The user can:
 - Include symbols
 - Generate a password
 - Reset the form
+
+### Project 4 - Background Changer 🎨
+
+A simple React Native app that generates a random background color when the user presses a button.
+
+Concepts practiced:
+
+- `useState`
+- Functions
+- `TouchableOpacity`
+- `onPress`
+- Dynamic styling
+- `backgroundColor`
+- Random number generation
+- Hexadecimal colors
+- `Math.random()`
+- `Math.floor()`
+- Loops
+- Inline styles
+
+The app can:
+
+- Generate a random background color
+- Change the background color when the button is pressed
+- Generate a new color every time the button is pressed
 
 ## 🛠️ Technologies
 
