@@ -7,12 +7,15 @@ import { AppRegistry } from 'react-native';
 // import AppPro from './AppPro'
 // import Project2 from './Project2'
 // import Project3 from './Project3'
-import bgChanger from './bgChanger'
+// import bgChanger from './bgChanger'
+import RollTheDice from './src/RollTheDice'
 import { name as appName } from './app.json';
 
 // AppRegistry.registerComponent(appName, () => App);
 
 // AppRegistry.registerComponent(appName,()=>AppPro)
 
-AppRegistry.registerComponent(appName,()=>Project3)
-AppRegistry.registerComponent(appName,()=>bgChanger)
+// AppRegistry.registerComponent(appName,()=>Project3)
+// AppRegistry.registerComponent(appName,()=>bgChanger)
+
+AppRegistry.registerComponent(appName,()=>RollTheDice)

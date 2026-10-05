@@ -20,6 +20,7 @@ While working on these projects, I am learning and practicing:
 - Navigation
 - APIs
 - Reusable components
+- Animations
 - Third-party libraries
 - And more React Native concepts
 
@@ -85,6 +86,41 @@ The app can:
 - Change the background color when the button is pressed
 - Generate a new color every time the button is pressed
 
+### Project 5 - Roll The Dice 🎲
+
+A simple dice rolling app built while learning React Native animations, state management, and user interactions.
+
+Concepts practiced:
+
+- React Native
+- TypeScript
+- `useState`
+- `useRef`
+- `Animated`
+- `Animated.timing()`
+- `Animated.parallel()`
+- `Animated.sequence()`
+- `Pressable`
+- `onPress`
+- `Math.random()`
+- `Math.floor()`
+- `switch` statements
+- Dynamic image rendering
+- Image props
+- Rotation animations
+- Scale/bounce animations
+- Button press animations
+
+The app can:
+
+- Roll a dice
+- Generate a random number from 1 to 6
+- Display the corresponding dice image
+- Show the rolled number
+- Rotate the dice when rolling
+- Add a bounce/scale animation
+- Animate the button when pressed
+
 ## 🛠️ Technologies
 
 - React Native
@@ -93,6 +129,7 @@ The app can:
 - Formik
 - Yup
 - React Native Bouncy Checkbox
+- React Native Animated API
 
 ## 🎯 Goal
 
