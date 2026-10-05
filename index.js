@@ -8,8 +8,10 @@ import { AppRegistry } from 'react-native';
 // import Project2 from './Project2'
 // import Project3 from './Project3'
 // import bgChanger from './bgChanger'
-import RollTheDice from './src/RollTheDice'
+// import RollTheDice from './src/RollTheDice'
+import CurrencyConverter from './src/CurrencyConverter'
 import { name as appName } from './app.json';
+
 
 // AppRegistry.registerComponent(appName, () => App);
 
@@ -18,4 +20,6 @@ import { name as appName } from './app.json';
 // AppRegistry.registerComponent(appName,()=>Project3)
 // AppRegistry.registerComponent(appName,()=>bgChanger)
 
-AppRegistry.registerComponent(appName,()=>RollTheDice)
+// AppRegistry.registerComponent(appName,()=>RollTheDice)
+
+AppRegistry.registerComponent(appName, ()=> CurrencyConverter)
