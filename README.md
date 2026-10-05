@@ -17,6 +17,9 @@ While working on these projects, I am learning and practicing:
 - Styling with `StyleSheet`
 - Flexbox
 - Forms and validation
+- Lists with `FlatList`
+- Conditional rendering
+- User input
 - Navigation
 - APIs
 - Reusable components
@@ -121,6 +124,38 @@ The app can:
 - Add a bounce/scale animation
 - Animate the button when pressed
 
+### Project 6 - Currency Converter 💱
+
+A currency converter app that converts an amount entered in Indian Rupees (INR) into different currencies.
+
+Concepts practiced:
+
+- React Native
+- TypeScript
+- `useState`
+- `FlatList`
+- `Pressable`
+- `TextInput`
+- Props
+- Reusable components
+- Conditional styling
+- Currency conversion logic
+- `parseFloat()`
+- `isNaN()`
+- Template literals
+- `toFixed()`
+- Snackbar notifications
+
+The app can:
+
+- Enter an amount in Indian Rupees
+- Select a target currency
+- Convert the entered amount
+- Display the converted value
+- Highlight the selected currency
+- Show an error when the input is empty
+- Show an error when the entered value is not a valid number
+
 ## 🛠️ Technologies
 
 - React Native
@@ -130,6 +165,7 @@ The app can:
 - Yup
 - React Native Bouncy Checkbox
 - React Native Animated API
+- React Native Snackbar
 
 ## 🎯 Goal
 
