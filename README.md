@@ -1,137 +1,185 @@
-# React Native Learning Journey 📱
+# React Native + TypeScript Learning Journey 🚀
 
-This repository contains my journey of learning **React Native** and **TypeScript**.
+Welcome to my React Native learning journey!
 
-I am using this repository to practice different React Native concepts by building small projects and gradually moving towards bigger applications.
+I am learning **React Native with TypeScript** step by step by building small projects and gradually increasing the complexity.
 
-## 🚀 What I'm Learning
+This repository contains my learning progress, experiments, and projects while learning mobile app development.
 
-While working on these projects, I am learning and practicing:
+---
+
+## 📚 What I'm Learning
 
 - React Native fundamentals
-- TypeScript
+- TypeScript with React Native
 - Components
 - Props
+- `PropsWithChildren`
 - State and `useState`
 - Event handling
-- Styling with `StyleSheet`
-- Flexbox
-- Forms and validation
-- Lists with `FlatList`
+- `Pressable`, `TouchableOpacity` and buttons
+- `TextInput`
+- `StyleSheet`
+- Flexbox layouts
 - Conditional rendering
 - User input
-- Navigation
-- APIs
+- Forms and validation
+- FlatList
 - Reusable components
+- Random number generation
+- Dynamic styling
 - Animations
+- React Native APIs
 - Third-party libraries
-- And more React Native concepts
+- Navigation
+- API integration
 
-## 📂 Projects
+---
 
-I am building different projects while learning React Native.
+# 🛠️ Projects
 
-### Project 1
+## Project 1 — React Native Fundamentals
 
-A basic React Native project to understand the fundamentals of components, styling, and layouts.
+A basic project created to understand the fundamentals of React Native.
 
-### Project 2
+### Concepts Learned
 
-A project focused on practicing React Native UI components and user interactions.
+- Components
+- JSX
+- `View`
+- `Text`
+- `SafeAreaView`
+- `StyleSheet`
+- Flexbox
+- Basic styling
+- Layouts
+- `StatusBar`
 
-### Project 3 - Password Generator 🔐
+---
 
-A password generator app where I am practicing:
+## Project 2 — UI Components & Interactions
 
-- React Native
-- TypeScript
+A project focused on creating reusable UI elements and handling user interactions.
+
+### Concepts Learned
+
+- Components
+- Props
+- `useState`
+- Buttons
+- `Pressable`
+- `TouchableOpacity`
+- Event handling
+- Conditional rendering
+- Dynamic styling
+
+---
+
+## Project 3 — Password Generator 🔐
+
+A password generator that allows users to generate random passwords based on selected options.
+
+### Features
+
+- Choose password length
+- Include lowercase letters
+- Include uppercase letters
+- Include numbers
+- Include symbols
+- Generate random passwords
+- Reset the form
+- Input validation
+
+### Concepts Learned
+
 - `useState`
 - Formik
 - Yup
 - Bouncy Checkbox
 - Form validation
-- Random password generation
+- Random string generation
+- `Math.random()`
+- `Math.floor()`
 - Conditional rendering
-- User input handling
+- User input
 
-The user can:
+---
 
-- Select password length
-- Include lowercase letters
-- Include uppercase letters
-- Include numbers
-- Include symbols
-- Generate a password
-- Reset the form
+## Project 4 — Background Changer 🎨
 
-### Project 4 - Background Changer 🎨
+A simple app that generates a random background color whenever the user presses a button.
 
-A simple React Native app that generates a random background color when the user presses a button.
+### Features
 
-Concepts practiced:
+- Generate random colors
+- Change background dynamically
+- Generate hexadecimal colors
+- Button interaction
+
+### Concepts Learned
 
 - `useState`
-- Functions
 - `TouchableOpacity`
 - `onPress`
 - Dynamic styling
 - `backgroundColor`
-- Random number generation
-- Hexadecimal colors
 - `Math.random()`
 - `Math.floor()`
 - Loops
+- Hexadecimal colors
 - Inline styles
 
-The app can:
+---
 
-- Generate a random background color
-- Change the background color when the button is pressed
-- Generate a new color every time the button is pressed
+## Project 5 — Roll The Dice 🎲
 
-### Project 5 - Roll The Dice 🎲
+A dice rolling application where users can roll a dice and get a random result.
 
-A simple dice rolling app built while learning React Native animations, state management, and user interactions.
+### Features
 
-Concepts practiced:
+- Random dice number generation
+- Dynamic dice image
+- Dice rotation animation
+- Dice scale animation
+- Pressable button
+- Displays the rolled number
 
-- React Native
-- TypeScript
+### Concepts Learned
+
 - `useState`
 - `useRef`
 - `Animated`
-- `Animated.timing()`
-- `Animated.parallel()`
-- `Animated.sequence()`
+- `Animated.timing`
+- `Animated.parallel`
+- `Animated.sequence`
 - `Pressable`
 - `onPress`
 - `Math.random()`
 - `Math.floor()`
-- `switch` statements
+- `switch`
 - Dynamic image rendering
 - Image props
-- Rotation animations
-- Scale/bounce animations
-- Button press animations
+- Rotation animation
+- Scale animation
 
-The app can:
+---
 
-- Roll a dice
-- Generate a random number from 1 to 6
-- Display the corresponding dice image
-- Show the rolled number
-- Rotate the dice when rolling
-- Add a bounce/scale animation
-- Animate the button when pressed
+## Project 6 — Currency Converter 💱
 
-### Project 6 - Currency Converter 💱
+A currency converter that converts Indian Rupees into different currencies.
 
-A currency converter app that converts an amount entered in Indian Rupees (INR) into different currencies.
+### Features
 
-Concepts practiced:
+- Enter amount in INR
+- Select target currency
+- Convert currency
+- Display converted amount
+- Highlight selected currency
+- Input validation
+- Error notifications
 
-- React Native
-- TypeScript
+### Concepts Learned
+
 - `useState`
 - `FlatList`
 - `Pressable`
@@ -146,46 +194,50 @@ Concepts practiced:
 - `toFixed()`
 - Snackbar notifications
 
-The app can:
+---
 
-- Enter an amount in Indian Rupees
-- Select a target currency
-- Convert the entered amount
-- Display the converted value
-- Highlight the selected currency
-- Show an error when the input is empty
-- Show an error when the entered value is not a valid number
+## Project 7 — Tic-Tac-Toe ❌⭕️
 
-## 🛠️ Technologies
+A two-player Tic-Tac-Toe game built with React Native.
 
-- React Native
-- TypeScript
-- JavaScript
-- Formik
-- Yup
-- React Native Bouncy Checkbox
-- React Native Animated API
-- React Native Snackbar
+### Features
 
-## 🎯 Goal
+- 3 × 3 game board
+- Player X and Player O
+- Alternating turns
+- Winner detection
+- Draw detection
+- Prevents selecting an already-filled position
+- Restart game functionality
+- Displays current player's turn
+- Displays winner message
+- Dynamic X and O symbols
 
-My goal is to learn React Native by **building projects instead of only watching tutorials**.
+### Concepts Learned
 
-I will continue adding new projects and features to this repository as I learn.
+- `useState`
+- `FlatList`
+- `Pressable`
+- Props
+- Reusable components
+- Conditional rendering
+- Array state
+- Updating arrays without directly modifying state
+- Game logic
+- Winner detection
+- Draw detection
+- `includes()`
+- Multiple `if / else if` conditions
+- Dynamic component rendering
+- Snackbar notifications
 
-## 📚 Learning Approach
+### Winning Combinations
 
-For every project, I try to understand:
+The game checks all 8 possible winning combinations:
 
-1. What the code does
-2. Why it is used
-3. How React Native handles it
-4. How different components work together
-5. How I can improve the project
-
-## 🔨 Setup
-
-Clone the repository:
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+```text
+0 | 1 | 2
+---------
+3 | 4 | 5
+---------
+6 | 7 | 8
