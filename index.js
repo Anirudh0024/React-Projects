@@ -3,14 +3,19 @@
  */
 
 import { AppRegistry } from 'react-native';
+import TrackPlayer from 'react-native-track-player';
+
 // import App from './App';
 // import AppPro from './AppPro'
 // import Project2 from './Project2'
 // import Project3 from './Project3'
 // import bgChanger from './bgChanger'
 // import RollTheDice from './src/RollTheDice'
-import CurrencyConverter from './src/CurrencyConverter'
-import TicTacToe from './src/TicTacToe'
+// import CurrencyConverter from './src/CurrencyConverter'
+// import TicTacToe from './src/TicTacToe'
+import Moodify from './src/Moodify'
+import { playbackService } from './musicPlayerServices';
+TrackPlayer.registerPlaybackService(()=> playbackService)
 import { name as appName } from './app.json';
 
 
@@ -24,4 +29,5 @@ import { name as appName } from './app.json';
 // AppRegistry.registerComponent(appName,()=>RollTheDice)
 
 // AppRegistry.registerComponent(appName, ()=> CurrencyConverter)
-AppRegistry.registerComponent(appName,()=>TicTacToe)
+// AppRegistry.registerComponent(appName,()=>TicTacToe)
+AppRegistry.registerComponent(appName,()=> Moodify)
