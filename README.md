@@ -241,3 +241,59 @@ The game checks all 8 possible winning combinations:
 3 | 4 | 5
 ---------
 6 | 7 | 8
+
+
+---
+
+## Project 8 — Moodify Music Player 🎵
+
+Moodify is a music player application built with React Native and TypeScript. This project focuses on audio playback, track navigation, album artwork, and interactive playback controls.
+
+### Features
+
+- Play and pause music
+- Navigate to the next and previous tracks
+- Display song title, artist, and album information
+- Display album artwork for the current track
+- Interactive playback progress slider
+- Seek to a specific position in a song
+- Display elapsed and remaining playback time
+- Configure player volume
+
+### Concepts Learned
+
+- React Native with TypeScript
+- Reusable components
+- React Hooks: `useState` and `useEffect`
+- Custom hooks for player state
+- Third-party library integration
+- Audio player setup and initialization
+- Managing a music playlist
+- Track navigation and playback controls
+- Dynamic rendering of song metadata
+- Displaying remote images using `Image`
+- Implementing a seekable progress slider
+- Formatting time in minutes and seconds
+- Error handling with `try/catch`
+- Organizing code into screens, components, and services
+
+### Technologies Used
+
+- React Native
+- TypeScript
+- `@rntp/player`
+- `@react-native-community/slider`
+
+### Key Components
+
+- `MusicPlayer.tsx` — Main music player screen
+- `SongInfo.tsx` — Displays song metadata
+- `SongSlider.tsx` — Displays playback progress and allows seeking
+- `ControlCenter.tsx` — Handles playback controls
+- `musicPlayerServices.js` — Handles player initialization and playlist loading
+- `constants.ts` — Stores playlist data and track metadata
+
+### What I Practiced
+
+This project helped me understand how to integrate an audio playback library into a React Native application, connect player state to the user interface, and build interactive controls for music playback.
+
