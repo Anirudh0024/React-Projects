@@ -1,9 +1,9 @@
+
 /**
  * @format
  */
 
 import { AppRegistry } from 'react-native';
-import TrackPlayer from 'react-native-track-player';
 
 // import App from './App';
 // import AppPro from './AppPro'
@@ -14,8 +14,8 @@ import TrackPlayer from 'react-native-track-player';
 // import CurrencyConverter from './src/CurrencyConverter'
 // import TicTacToe from './src/TicTacToe'
 import Moodify from './src/Moodify'
-import { playbackService } from './musicPlayerServices';
-TrackPlayer.registerPlaybackService(()=> playbackService)
+// import { playbackService } from './musicPlayerServices';
+// TrackPlayer.registerPlaybackService(()=> playbackService)
 import { name as appName } from './app.json';
 
 

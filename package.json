@@ -10,7 +10,9 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-community/slider": "^5.2.1",
     "@react-native/new-app-screen": "0.87.1",
+    "@rntp/player": "^5.12.1",
     "@types/react-native-vector-icons": "^6.4.18",
     "formik": "^2.4.9",
     "react": "19.2.3",
@@ -19,7 +21,6 @@
     "react-native-haptic-feedback": "^3.0.0",
     "react-native-safe-area-context": "^5.5.2",
     "react-native-snackbar": "^3.0.1",
-    "react-native-track-player": "^4.1.2",
     "react-native-vector-icons": "^10.3.0",
     "yup": "^1.7.1"
   },

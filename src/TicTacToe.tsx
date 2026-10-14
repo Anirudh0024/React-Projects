@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import React, {useState} from 'react';
 import {Snackbar} from 'react-native-snackbar';
-import Icons from './comonents/Icons';
+import Icons from './components/Icons';
 
 export default function TicTacToe() {
   const [isCross, setIsCross] = useState<boolean>(false);

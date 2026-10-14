@@ -5,7 +5,7 @@ import { Snackbar } from 'react-native-snackbar';
 // CONSTANTS
 import { currencyByRupee } from './constants';
 // Component
-import CurrencyButton from './comonents/CurrencyButton';
+import CurrencyButton from './components/CurrencyButton';
 
 
 export default function CurrencyConverter() {

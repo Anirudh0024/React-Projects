@@ -1,35 +1,57 @@
-import TrackPlayer, { Event, RepeatMode } from "react-native-track-player";
-import { playListData } from "./src/constants";
+import TrackPlayer, { PlayerCommand } from '@rntp/player';
+import { playListData } from './src/constants';
 
+let isSetup = false;
+let isPlaylistLoaded = false;
 
 export async function setupPlayer() {
-    let isSetup =false;
-    try{
-        await TrackPlayer.getCurrentTrack()
-        isSetup=true
-    } catch (error){
-        await TrackPlayer.setupPlayer()
-        isSetup=true
-    } finally {
-        return isSetup;
-    }
+  if (isSetup) {
+    return true;
+  }
+
+  try {
+    await TrackPlayer.setupPlayer({
+      contentType: 'music',
+      handleAudioBecomingNoisy: true,
+    });
+
+    isSetup = true;
+    console.log('Player initialized successfully');
+
+    return true;
+  } catch (error) {
+    console.error('Player setup failed:', error);
+    return false;
+  }
 }
 
-export async function addTrack(){
-    await TrackPlayer.add(playListData)
-    await TrackPlayer.setRepeatMode(RepeatMode.Queue)
-}
-export async function playbackService (){
-    TrackPlayer.addEventListener(Event.RemotePause,()=>{
-        TrackPlayer.pause()
-    })
-    TrackPlayer.addEventListener(Event.RemotePlay,()=>{
-        TrackPlayer.play()
-    })
-    TrackPlayer.addEventListener(Event.RemoteNext,()=>{
-        TrackPlayer.skipToNext()
-    })
-    TrackPlayer.addEventListener(Event.RemotePrevious,()=>{
-        TrackPlayer.skipToPrevious()
-    })
+export async function addTrack() {
+  try {
+    if (!isSetup) {
+      console.error('Player has not been initialized');
+      return false;
+    }
+
+    if (isPlaylistLoaded) {
+      return true;
+    }
+
+    await TrackPlayer.setMediaItems(playListData);
+
+    await TrackPlayer.setCommands({
+      capabilities: [
+        PlayerCommand.PlayPause,
+        PlayerCommand.Next,
+        PlayerCommand.Previous,
+      ],
+    });
+
+    isPlaylistLoaded = true;
+    console.log('Playlist loaded successfully');
+
+    return true;
+  } catch (error) {
+    console.error('Failed to load playlist:', error);
+    return false;
+  }
 }

@@ -57,53 +57,52 @@
 
 // Here i am wo=riting constants for y music player app
 
-import { Track } from "react-native-track-player";
+import type { MediaItem } from '@rntp/player';
 
-export const playListData: Track[] = [
-    {
-      id: 1,
-      title: 'Maan Meri Jaan',
-      artist: 'King',
-      album: 'Champagne Talk',
-      artwork:
-        'https://c.saavncdn.com/734/Champagne-Talk-Hindi-2022-20221008011951-500x500.jpg',
-      url: require('./assets/audio/one.mp3'),
-    },
-    {
-      id: 2,
-      title: 'Raataan Lambiyan',
-      artist: 'Tanishk Bagchi, Asees Kaur',
-      album: 'Shershaah',
-      artwork:
-        'https://c.saavncdn.com/238/Shershaah-Original-Motion-Picture-Soundtrack--Hindi-2021-20210815181610-500x500.jpg',
-      url: require('./assets/audio/two.mp3'),
-    },
-    {
-      id: 3,
-      title: 'Kesariya',
-      artist: 'Arijit Singh, Amitabh Bhattacharya',
-      album: 'Brahmastra',
-      artwork:
-        'https://c.saavncdn.com/191/Kesariya-From-Brahmastra-Hindi-2022-20220717092820-500x500.jpg',
-      url: require('./assets/audio/three.mp3'),
-    },
-    {
-      id: 4,
-      title: 'Title Track',
-      artist: 'Arijit Singh, Parampara Tandon',
-      album: 'Pal Pal Dil Ke Paas',
-      artwork:
-        'https://c.saavncdn.com/328/Pal-Pal-Dil-Ke-Paas-Hindi-2019-20200420150444-500x500.jpg',
-      url: require('./assets/audio/four.mp3'),
-    },
-    {
-      id: 5,
-      title: 'Besharam Rang',
-      artist: 'Vishal & Shekhar, Shilpa Rao',
-      album: 'Pathaan',
-      artwork:
-        'https://c.saavncdn.com/807/Pathaan-Hindi-2022-20221222104158-500x500.jpg',
-      url: require('./assets/audio/five.mp3'),
-    },
-  ];
-  
+export const playListData: MediaItem[] = [
+  {
+    mediaId: '1',
+    title: 'Dil Awara',
+    artist: 'Diljeet',
+    album: 'Champagne Talk',
+    artworkUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLJBuALMVxJv43_i3VD7qHLe3g47YCyX3N7u_2Caz4jw&s=10',
+    url: require('./assets/audio/one.mp3'),
+  },
+  {
+    mediaId: '2',
+    title: 'Mashooka',
+    artist: 'Pritam',
+    album: 'Coktail',
+    artworkUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRflQHT-eCwj6uVLJX4yfvh7Hm_d_ujL_rSSRS6lm7NDg&s=10',
+    url: require('./assets/audio/two.mp3'),
+  },
+  {
+    mediaId: '3',
+    title: 'Kalyaani',
+    artist: 'Shreya Ghoshal',
+    album: 'Kalyaani',
+    artworkUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_w3nP1lxEE_DWOuTIKDf48yoLTVvKHs8c5G9HK-Zd-A&s=10',
+    url: require('./assets/audio/three.mp3'),
+  },
+  {
+    mediaId: '4',
+    title: 'Jhol',
+    artist: ' Maanu and Annural Khalid',
+    album: 'Cooke Studio',
+    artworkUrl:
+      'https://i.scdn.co/image/ab67616d0000b273da7d1408f8e776063963572f',
+    url: require('./assets/audio/four.mp3'),
+  },
+  {
+    mediaId: '5',
+    title: 'Tupka Takila',
+    artist: 'Honey Singh',
+    album: 'Pathaan',
+    artworkUrl:
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHAuvkmseWgX9gNeVU9H-NEUihlisRw14nRl9Rrp5HWw&s=10',
+    url: require('./assets/audio/five.mp3'),
+  },
+];
